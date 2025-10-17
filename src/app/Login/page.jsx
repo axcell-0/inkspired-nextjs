@@ -9,10 +9,10 @@ const page = () => {
 
         <div className='w-1/2 p-8 '>
         <Image
-            src="/image/logo.png"
+            src="/logo.jpg"
             alt="Website logo"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             className="mb-6 mt-10"
           />
           <h2 className='text-2xl font-semibold mb-6'>Login to Your Account</h2>
