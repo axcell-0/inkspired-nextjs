@@ -2,6 +2,10 @@
 
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import NavBar from  '@/components/NavBar'
+import MainContent from '@/components/MainContent'
+import RightSection from '@/components/RightSection'
+import SideBar from '@/components/SideBar'
 
 const Page = () => {
   const [user, setUser] = useState(null)
@@ -31,12 +35,19 @@ const Page = () => {
     )
   }
   return (
-      <div className="h-screen w-full bg-emerald-700
-     text-white text-5xl flex flex-col items-center
-     justify-center">
-      <h1>Welcome {user.email.split('@gmail.com')}</h1>
-       <button onClick={()=>handleLogout()} className="my-5 text-2xl cursor-pointer bg-black text-white p-2 rounded  transition">SignOut</button>
+    <>
+    <NavBar />
+      <div className="w-full flex ">
+      {/* side bar */}
+      <SideBar />
+      {/* end side bar  */}
+      {/* Main content */}
+      <MainContent/>
+      {/* End main content */}
+      {/* End right section */}
+      <RightSection/>
     </div>
+    </>
   )
 }
 
