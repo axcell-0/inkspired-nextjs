@@ -18,7 +18,7 @@ const Page = () => {
   }, [router])
   // logout a user 
    const handleLogout =()=>{
-    localStorage.removeItem('user')
+    //localStorage.removeItem('user')
     router.replace('/login')
    }
   if (!user) {
@@ -34,7 +34,7 @@ const Page = () => {
       <div className="h-screen w-full bg-emerald-700
      text-white text-5xl flex flex-col items-center
      justify-center">
-      <h1>Welcome {user.email}</h1>
+      <h1>Welcome {user.email.split('@gmail.com')}</h1>
        <button onClick={()=>handleLogout()} className="my-5 text-2xl cursor-pointer bg-black text-white p-2 rounded  transition">SignOut</button>
     </div>
   )

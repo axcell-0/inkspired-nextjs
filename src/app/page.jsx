@@ -17,7 +17,7 @@ const Page = () => {
             Unleash your Creativity, share your ideas, and craft your next blog article with elegance.
           </p>
           <div className="flex gap-4">
-            <Link href="/Login" className="bg-white text-emerald-800 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-gray-100 transition-all">
+            <Link href="/login" className="bg-white text-emerald-800 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-gray-100 transition-all">
               Start Writing
             </Link>
             <Link href="/register" className="border border-white text-white px-6 py-3 rounded-md hover:bg-white hover:text-emerald-800 transition-all">
